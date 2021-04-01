@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Pemrograman Mobile"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biodata"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/magenta"
+        android:onClick="toBiodata"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            app:icon="@drawable/ic_baseline_home_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/dark_gray"
+            android:backgroundTint="@color/gray"
+            android:layout_height="wrap_content"
+            android:onClick="toHome"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            app:icon="@drawable/ic_baseline_local_phone_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/dark_gray"
+            android:onClick="toPhone"
+            android:backgroundTint="@color/gray"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:iconTint="@color/dark_gray"
+        app:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:onClick="exit"
+        android:backgroundTint="@color/gray"
+        app:iconGravity="textStart"/>
+
+</LinearLayout>
